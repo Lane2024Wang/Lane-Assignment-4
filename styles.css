@@ -1,10 +1,23 @@
 body{
-    margin-top: 50px;
-    margin-bottom: 80px;
+    margin: 50px;
     background-color: turquoise;
     color:darkblue;
     font-size: medium;
     font-family:'Times New Roman', Times, serif;
+}
+
+.author{
+    width: 300px;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+
+.plan{
+    width: 600px;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
 }
 
 hr{
@@ -13,6 +26,14 @@ hr{
     background-color: darkblue;
     border: none;
     margin-bottom: 40px;
+}
+
+.pic-container {
+    display:flexbox;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 1000px;
 }
 
 .bilingual-container {
@@ -106,10 +127,19 @@ a {
     text-decoration: none;
 }
 
-img {
+.plan-drawing{
     width: 100%;
-    max-width: 1000px;
+    max-width: 900px;
     margin: 20px auto;
     display: block;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     border: 2px solid #4a90e2;
+}
+
+.avatar{
+    max-height: 200px;
+    margin: 20px auto;
+    display: block;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #4a90e2;
+}
